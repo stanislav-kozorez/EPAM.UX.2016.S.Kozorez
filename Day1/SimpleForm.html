@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+﻿ <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -6,36 +6,50 @@
 	<title>Page Title</title>
 </head>
 <body>
-	<h2>Регистрация</h2>
-		<form class = "reg-form">
-		<fieldset>
-			<label for="email">E-mail:</label>
-			<input id = "email" type="text" placeholder="test@test.ru" name="email"></br>
-		</fieldset>
-			Логин:
-			<input type="text" name="login"></br>
-			Пароль:
-			<input type="password" name="password"></br>
-			Пол:
-			<input type="radio" name="gender" value="female"> Женщина
-			<input type="radio" name="gender" value="male" checked> Мужчина</br>
-			Настоящее имя:
-			<input type="text" name="true-name"></br>
-			Дата рождения:
-			<select name ="year">
-				<option>2005</option>
-			</select>
-			<select name ="month">
-				<option>Февраль</option>
-			</select>
-			<select name ="day">
-				<option>4</option>
-			</select></br>
-			Место жительства:
-			<select name ="home-place">
-				<option>Луганск</option>
-			</select></br>
-			<button type="submit" >Register me </button>			
-		</form>
+    <h2>Регистрация</h2>
+    <form class="reg-form">
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input id="email" type="text" placeholder="test@test.ru" name="email" />
+        </div>
+        <div class="form-group">
+            <label for="login">Логин</label>
+            <input id="login" type="text" name="login" />
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input id="password" type="password" name="password" />
+        </div>
+        <div class="form-group">
+            <label>Пол:</label>
+            <input type="radio" name="gender" value="female" />Женщина
+            <input type="radio" name="gender" value="male" checked />Мужчина
+        </div>
+        <div class="form-group">
+            <label for="true-name">Настоящее имя:</label>
+            <input id="true-name" type="text" name="true-name" />
+        </div>
+        <div class="form-group">
+            <label>Дата рождения:</label>
+            <select name="year">
+                <option>2005</option>
+            </select>
+            <select name="month">
+                <option>Февраль</option>
+            </select>
+            <select name="day">
+                <option>4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Место жительства:</label>
+            <select name="home-place">
+                <option>Луганск</option>
+            </select>
+        </div>
+        <div class="submit">
+            <button type="submit">Register me</button>
+        </div>
+    </form>
 </body>
 </html> 
