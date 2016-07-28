@@ -1,0 +1,27 @@
+﻿.table{
+    border: solid 1px #e4e4e4;
+    display: table;
+    width: 500px;
+}
+
+.table-header{
+    font-weight: bold;
+    padding: 5px;
+}
+
+.table-row, .table-header{
+    display: table-row;
+}
+
+.table-cell{
+    display: table-cell;
+    padding: 5px;
+}
+
+.table-row:nth-child(2n){
+    background-color: #e4e4e4;
+}
+
+.table-row:hover{
+    background-color: #c8c8c8;
+}
