@@ -7,7 +7,7 @@ body
     padding: 14px 0 18px;
     width: 503px;
     margin: 0 auto;
-    background-color: #F5F5F5;
+    background-color: #FDFDFD;
     box-shadow: 6px 9px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -19,19 +19,33 @@ body
 
 .section-wrapper{
     display: flex;
-    font-family: Verdana, Arial;
+    font-family: Arial;
+    margin-top: 16px;
+    padding: 0 35px;
 }
 
 .section{
     width: 50%;
-    height: 200px;
 }
 
-.personal-information{
+.left-seciton{
+    margin-right: 14px;
+}
+
+.right-section{
+    margin-left: 14px;
+}
+
+.personal-information, .header{
     text-transform: uppercase;
 }
 
-.name, .surname{
+.personal-information{
+    margin-bottom: 20px;
+    padding-left: 11px;
+}
+
+.name, .surname, .header, .left-quote, .right-quote{
     font-weight: bold;
 }
 
@@ -43,7 +57,7 @@ body
     font-size: 20px;
 }
 
-.web-and-graphic, .designer{
+.web-and-graphic, .designer, .left-quote, .right-quote{
     color: #691D68;
 }
 
@@ -53,4 +67,42 @@ body
 
 .designer{
     font-size: 23px;
+}
+
+.tile{
+    background: #00ffff;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.header{
+    border-left: solid 4px #691D68;
+    font-size: 9px;
+    height: 19px;
+    line-height: 19px;
+    padding-left: 7px;
+}
+
+.left-quote, .right-quote{
+    font-size: 32px;
+    padding: 0 9px;
+}
+
+.right-quote{
+    float: right;    
+}
+
+.lorem {
+    font-size: 5px;
+    padding: 0 17px;
+}
+
+.reason-to-work-together{
+    list-style: none;
+    font-size: 9px;
+    margin: 0px;
+}
+
+.reason-to-work-together li{
+    margin-left: -20px;
 }
