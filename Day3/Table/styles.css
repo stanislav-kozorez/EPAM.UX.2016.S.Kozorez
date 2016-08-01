@@ -25,3 +25,62 @@
 .table-row:hover{
     background-color: #c8c8c8;
 }
+
+
+
+
+.cost-table{
+    box-shadow: 0 0 7px gray;
+    border-radius: 7px;
+    width: 700px;
+    background-color: #eae1cd;
+    border-collapse: collapse;
+}
+
+thead{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+tbody tr:hover{
+    background: linear-gradient(to right, #ffd800, #fff4e1);
+    cursor:pointer;
+}
+
+td:first-child::first-letter{
+    color:red;
+}
+
+td, th{
+    padding: 8px;
+}
+
+th{
+    background: gray;
+    color: white;
+}
+
+th:first-child{
+    border-top-left-radius: 7px;
+}
+
+th:last-child{
+    border-top-right-radius: 7px;
+}
+
+td{
+    border-right: 1px solid gray;
+}
+
+td:last-child{
+    border-right:none;
+}
+
+tr:last-child td:not(:last-child):not(:first-child){
+    border-bottom: 1px solid gray;
+}
+
+tr:last-child td:first-child{
+    border-bottom-left-radius: 7px;
+    border-bottom: 1px solid gray;
+}

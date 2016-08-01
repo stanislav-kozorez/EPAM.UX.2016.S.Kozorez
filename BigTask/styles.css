@@ -106,3 +106,33 @@ body
 .reason-to-work-together li{
     margin-left: -20px;
 }
+
+.table{
+    display:table;
+    background: #00ffff;
+}
+
+.row{
+    display: table-row;
+}
+
+.cell{
+    display:table-cell;
+}
+
+.circle{
+    background: #691D68;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.colored-span{
+    color:#691D68;
+}
+
+.table-cell-header{
+    font-size: 6px;
+    text-transform: uppercase;
+    color:#691D68;
+}
