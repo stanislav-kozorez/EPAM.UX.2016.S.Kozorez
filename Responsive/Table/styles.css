@@ -1,0 +1,99 @@
+﻿html{
+    background-color: white;
+}
+body
+{
+    margin:0 auto;
+    padding:0;
+    width: 1020px;
+    background-color: #CCCCCC;
+}
+
+.header-table, .content{
+    background-color: #CCCCCC;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header-table th{
+    text-align:left;
+    padding: 0 0 30px 10px;
+}
+
+.logo{
+    color:#26619D;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.header-text{
+    font-size: 25px;
+    color: #6B6B78;
+    text-transform: uppercase;
+}
+
+.header-smaller-text{
+    color:#A3A8B2;
+    font-size: 23px;
+}
+
+.header-table tbody{
+    background-color:#383838;
+    color: white;
+}
+
+.header-table ul li{
+    display:inline;
+}
+
+.menu{
+    padding: 0px;
+    list-style: none;
+}
+
+.menu li{
+    padding: 0 10px;
+}
+
+.content{
+    background-color: white;
+}
+
+.content nav{
+    margin-top: -300px;
+}
+
+.navigation-list{
+    display: block;
+    list-style: none;
+    background-color:#383838;
+    color: white;
+    border: 7px solid gray;
+    text-align: center;
+    padding: 0px;
+}
+
+.navigation-list li{
+    padding: 10px 0;
+}
+
+.small-padding{
+    padding: 20px;
+}
+
+.content-table{
+    width: 100%;
+}
+
+.content-table thead{
+    background-color: gray;
+}
+
+.footer{
+    height: 40px;
+    background: linear-gradient(to top, #383838, white);
+}
+
+.content h2{
+    color:#A3A8B2;
+}

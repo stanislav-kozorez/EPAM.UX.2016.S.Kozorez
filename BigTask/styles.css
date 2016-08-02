@@ -107,17 +107,12 @@ body
     margin-left: -20px;
 }
 
-.table{
-    display:table;
+.contact-list{
     background: #00ffff;
 }
 
-.row{
-    display: table-row;
-}
-
-.cell{
-    display:table-cell;
+.contact-list-item-content{
+    display:inline-block;
 }
 
 .circle{
@@ -131,8 +126,13 @@ body
     color:#691D68;
 }
 
-.table-cell-header{
-    font-size: 6px;
+.contact-list-item-header{
+    font-size: 7px;
     text-transform: uppercase;
     color:#691D68;
+    font-weight:bold;
+}
+
+.contact-list-item-text{
+    font-size: 8px;
 }
