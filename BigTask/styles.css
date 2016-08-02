@@ -222,3 +222,55 @@ body
 .contact-list-item-text{
     font-size: 8px;
 }
+
+.p-skill-list{
+    padding: 6px 16px 0 9px;
+}
+
+.p-skill-item{
+    display: flex;
+    margin-top: 6px;
+}
+
+.p-skill-item-left-content{
+    width: 46%;
+}
+
+.p-skill-item-right-content{
+    width: 54%;
+}
+
+.p-skill-item-text{
+    font-size: 7px;
+    font-weight: bold;
+}
+
+.p-skill-item-progress{
+    height: 8px;
+    background-color: #DFCFDC;
+}
+
+.p-skill-social-management, .p-skill-communication, .p-skill-creativity, .p-skill-organisation, .p-skill-team-player{
+    background: linear-gradient(to right, #A775AA, #F5F5F5, #F5F5F5, #A775AA);
+    height:100%;
+}
+
+.p-skill-social-management{
+    width: 91%;
+}
+
+.p-skill-creativity{
+    width: 64%;
+}
+
+.p-skill-organisation{
+    width: 97%;
+}
+
+.p-skill-communication{
+    width: 93%;
+}
+
+.p-skill-team-player{
+    width: 80%;
+}
