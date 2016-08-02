@@ -21,7 +21,7 @@ body
     display: flex;
     font-family: Arial;
     margin-top: 16px;
-    padding: 0 35px;
+    padding: 0 29px;
 }
 
 .section{
@@ -49,24 +49,37 @@ body
     font-weight: bold;
 }
 
+.name, .surname{
+    font-family: verdana;
+}
+
 .name{
-    font-size: 34px;
+    font-size: 47px;
+    letter-spacing: -3px;
+    margin: -10px 0 0 -3px;
 }
 
 .surname{
-    font-size: 20px;
+    font-size: 26px;
+    letter-spacing: -1px;
+    margin-top: -8px;
 }
 
 .web-and-graphic, .designer, .left-quote, .right-quote{
-    color: #691D68;
+    color: #8f4d8b;
 }
 
 .web-and-graphic {
-    font-size: 15px;
+    font-size: 19px;
+    margin-top: 18px;
+    font-family: sans-serif;
+    letter-spacing: -1px;
 }
 
 .designer{
-    font-size: 23px;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: -2px;
 }
 
 .tile{
@@ -77,7 +90,7 @@ body
 
 .header{
     border-left: solid 4px #691D68;
-    font-size: 9px;
+    font-size: 11px;
     height: 19px;
     line-height: 19px;
     padding-left: 7px;
@@ -86,6 +99,7 @@ body
 .left-quote, .right-quote{
     font-size: 32px;
     padding: 0 9px;
+    height: 19px;
 }
 
 .right-quote{
@@ -93,9 +107,64 @@ body
 }
 
 .lorem {
-    font-size: 5px;
-    padding: 0 17px;
+    font-size: 6px;
+    padding: 0 20px;
 }
+
+.education-list{
+    margin: 5px 0 0 3px;
+}
+
+.experience-list{
+    margin: 5px 0 0 12px;
+}
+
+.education-list-item, .experience-list-item{
+    display:flex;
+}
+
+.triangle{
+    border: 3px solid transparent;
+    border-left: 6px solid #8f4d8b;
+    height: 0;
+    width: 0;
+    margin-top: 1px;
+}
+
+.vertical-border{
+    border-left: 2px solid #8f4d8b;
+    height: 100%;
+    margin-top: -1px;
+}
+
+.education-list-item:last-child .vertical-border{
+    border:none;
+}
+
+.education-year, .experience-year{
+    font-size: 7px;
+    font-weight:bold;
+    margin-right: 15px;
+}
+
+.education-list-item-small-text, .experience-list-item-small-text{
+    color: #8f4d8b;
+    font-weight: bold;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+.education-list-item-smaller-text, .experience-list-item-smaller-text{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.education-list-item-smallest-text, .experience-list-item-smallest-text{
+    font-size: 6px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 
 .reason-to-work-together{
     list-style: none;
@@ -104,20 +173,31 @@ body
 }
 
 .reason-to-work-together li{
-    margin-left: -20px;
+    margin-left: -24px;
 }
 
-.table{
-    display:table;
+.available-for{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.available-for, .hire-and-freelance{
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.hire-and-freelance{
+    font-size: 15px;
+}
+
+.contact-list{
     background: #00ffff;
+    margin: 7px 0 33px;
 }
 
-.row{
-    display: table-row;
-}
-
-.cell{
-    display:table-cell;
+.contact-list-item{
+    display: flex;
+    margin-bottom: 6px;
 }
 
 .circle{
@@ -125,14 +205,20 @@ body
     width: 16px;
     height: 16px;
     border-radius: 50%;
+    margin-right:5px;
 }
 
 .colored-span{
     color:#691D68;
 }
 
-.table-cell-header{
-    font-size: 6px;
+.contact-list-item-header{
+    font-size: 8px;
     text-transform: uppercase;
     color:#691D68;
+    font-weight:bold;
+}
+
+.contact-list-item-text{
+    font-size: 8px;
 }
