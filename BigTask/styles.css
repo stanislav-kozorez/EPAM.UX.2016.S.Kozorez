@@ -106,33 +106,3 @@ body
 .reason-to-work-together li{
     margin-left: -20px;
 }
-
-.contact-list{
-    background: #00ffff;
-}
-
-.contact-list-item-content{
-    display:inline-block;
-}
-
-.circle{
-    background: #691D68;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-}
-
-.colored-span{
-    color:#691D68;
-}
-
-.contact-list-item-header{
-    font-size: 7px;
-    text-transform: uppercase;
-    color:#691D68;
-    font-weight:bold;
-}
-
-.contact-list-item-text{
-    font-size: 8px;
-}
