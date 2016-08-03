@@ -274,3 +274,90 @@ body
 .p-skill-team-player{
     width: 80%;
 }
+
+.s-skill-histogram-wrapper{
+    display:flex;
+    margin-left: 11px;
+}
+
+.percent{
+    font-size: 7px;
+    margin-top: 9px;
+}
+
+.s-skill-histogram{
+    border-top: solid 2px black;
+    border-left: solid 2px black;
+    font-size: 7px;
+    padding-top: 4px;
+    transform-origin: 71px 69px;
+    transform: rotate(-90deg);
+    width: 138px;
+    height: 164px;
+}
+
+.light{
+    background: linear-gradient(to bottom, #A775AA, #F5F5F5, #F5F5F5, #A775AA);
+}
+
+.dark{
+    background: linear-gradient(to bottom, #441C41, #8B1B89, #8B1B89, #441C41);
+    color: white;
+}
+
+.light, .dark{
+    padding: 4px;
+    margin-left: 4px;
+    margin-bottom: 8px;
+}
+
+.s-skill-in-design{
+    width: 95px;
+}
+
+.s-skill-illustrator{
+    width: 104px;
+}
+
+.s-skill-photoshop{
+    width: 113px;
+}
+
+.s-skill-dreamweaver{
+    width: 53px;
+}
+
+.s-skill-wordpress{
+    width: 105px;
+}
+
+.s-skill-html-css{
+    width: 91px;
+}
+
+.s-skill-js{
+    width: 50px;
+}
+
+.s-skill-print, .s-skill-write{
+    width: 10px;
+    height: 10px;
+}
+
+.s-skill-print{
+    background: linear-gradient(to right, #A775AA, #F5F5F5, #F5F5F5, #A775AA);
+    margin-left: 26px
+}
+
+.s-skill-write{
+    background: linear-gradient(to right, #441C41, #8B1B89, #8B1B89, #441C41);
+}
+
+.s-skill-text{
+    font-size: 7px;
+    margin: 3px 18px 0 3px;
+}
+
+.s-skill-print, .s-skill-write, .s-skill-text{
+    margin-top: -26px;
+}
