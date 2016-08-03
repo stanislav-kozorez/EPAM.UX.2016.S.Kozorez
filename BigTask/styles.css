@@ -83,8 +83,7 @@ body
 }
 
 .tile{
-    background: #00ffff;
-    overflow: hidden;
+    /*background: #00ffff;*/
     margin-bottom: 20px;
 }
 
@@ -103,7 +102,7 @@ body
 }
 
 .right-quote{
-    float: right;    
+    text-align:right;
 }
 
 .lorem {
@@ -191,7 +190,6 @@ body
 }
 
 .contact-list{
-    background: #00ffff;
     margin: 7px 0 33px;
 }
 
