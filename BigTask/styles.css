@@ -6,23 +6,28 @@
 
 body{
     background-color: #FDFDFD;
-    box-shadow: 6px 9px 5px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    min-height: 100%;
+    box-shadow: 6px 9px 5px rgba(0, 0, 0, 0.2);    
+    min-height: calc(100vh - 86px);
     width: 500px;
-    left: 50%;
-    margin:0 0 0 -250px;
-    padding: 14px 0 37px;   
+    padding: 49px 0 37px;
+    margin: 0 auto;   
+}
+
+header{
+    position: absolute;
+    left: 0;
+    top: 14px;
 }
 
 footer{
+    position: absolute;
+    bottom: 18px;
+    left: 0;
     color: #5B5B5B;
     font-family: arial;
     font-weight: bold;
     font-size: 9px;
     text-align:center;
-    position: absolute;
-    bottom: 18px;
 }
 
 ul{
@@ -50,7 +55,6 @@ ul{
 .section-wrapper{
     display: flex;
     font-family: Arial;
-    margin-top: 16px;
     padding: 0 29px;
 }
 
@@ -123,10 +127,10 @@ ul{
 .header{
     border-left: solid 4px #691D68;
     font-size: 11px;
-    height: 19px;
-    line-height: 19px;
-    padding-left: 7px;
     margin:0;
+    padding: 3px 0 3px 7px;
+    max-width: 205px;
+    word-break: break-all;
 }
 
 .lorem {
@@ -255,44 +259,144 @@ ul{
 .available-for, .hire-and-freelance{
     text-transform: uppercase;
     letter-spacing: -1px;
+    margin: 0;
 }
 
 .hire-and-freelance{
     font-size: 15px;
+    font-weight:normal;
 }
 
-.contact-list{
+.contact-form{
     margin: 7px 0 33px;
 }
 
-.contact-list-item{
-    display: flex;
-    margin-bottom: 6px;
-}
-
-.circle{
+.contact-form-label::before{
+    content:"";
+    display: inline-block;
     background: #691D68;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    margin-right:5px;
+    margin: 0 5px -9px 0;
+}
+
+.contact-form-label{
+    font-size: 8px;
+    text-transform: uppercase;
+    color:#691D68;
+    font-weight:bold;
+    display:block;
+    margin-bottom: -8px;
+}
+
+.contact-form-input{
+    font-size: 8px;
+    padding: 0;
+    border: none;
+    margin: 0 0 6px 21px;
 }
 
 .colored-span{
     color:#691D68;
 }
 
-.contact-list-item-header{
-    font-size: 8px;
+
+.work-play-balance-wrapper, .work-play-balance-header-section{
+    display:flex;
+    margin-left: 7px;
+}
+
+.margin-first{
+    margin-top: 10px;
+}
+
+.margin-second{
+    margin-top: 22px;
+}
+
+.col{
+    width: 30%;
+} 
+
+.left-col{
+    text-align:left;
+}
+
+.right-aligned{
+    text-align: right;
+}
+
+.work-play-balance-header, .work-play-balance-title, .work-play-balance-mid-header{
+    color: #8f4d8b;
     text-transform: uppercase;
-    color:#691D68;
-    font-weight:bold;
+    letter-spacing: -1px;
+    margin: 0;
 }
 
-.contact-list-item-text{
+.work-play-balance-mid-header{
+    font-size: 11px;
+    text-align:center;
+    width: 40%;
+    margin-top: 2px;
+}
+
+.work-play-balance-header{
+    font-size: 13px;
+    font-weight: normal;
+    width: 30%;
+}
+
+.work-play-balance-title{
+    font-size: 9px;
+}
+
+.work-play-balance-text{
     font-size: 8px;
+    margin: 3px 0;
 }
 
+.mid-col{
+    width: 40%;
+    position: relative;
+}
+
+.circle{
+    background-color: rgba(218, 109, 232, 0.5);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    margin: 0 0 0 -50px;
+}
+
+.img-in-circle{
+    width: 22px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -11px 0 0 -11px;
+
+}
+
+.vertical-dotted-line{
+    border-left: 1px solid black;
+    border-left-style: dotted;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+}
+
+.right-circle{
+    margin: 0 0 0 -10px;
+}
+
+.right-col{
+    text-align: right;
+}
+    
 .p-skill-list{
     padding: 6px 16px 0 9px;
 }
@@ -302,22 +406,19 @@ ul{
     margin-top: 6px;
 }
 
-.p-skill-item-left-content{
-    width: 46%;
-}
-
-.p-skill-item-right-content{
-    width: 54%;
-}
-
-.p-skill-item-text{
+.p-skill-header{
     font-size: 7px;
     font-weight: bold;
+    margin:0;
+    width:87px;
+    max-width: 87px;
+    word-break:break-all;
 }
 
-.p-skill-item-progress{
+.p-skill-progress{
     height: 8px;
     background-color: #DFCFDC;
+    width: 102px;
 }
 
 .p-skill-social-management, .p-skill-communication, .p-skill-creativity, .p-skill-organisation, .p-skill-team-player{
@@ -350,6 +451,11 @@ ul{
     margin-left: 11px;
 }
 
+.s-skill-histogram-value-wrapper{
+    width: 113px;
+    height: 100%;
+}
+
 .percent{
     font-size: 7px;
     margin-top: 9px;
@@ -363,7 +469,7 @@ ul{
     transform-origin: 71px 69px;
     transform: rotate(-90deg);
     width: 138px;
-    height: 164px;
+    height: 100%;
 }
 
 .light{
@@ -382,31 +488,31 @@ ul{
 }
 
 .s-skill-in-design{
-    width: 95px;
+    width: 86%;
 }
 
 .s-skill-illustrator{
-    width: 104px;
+    width: 92%;
 }
 
 .s-skill-photoshop{
-    width: 113px;
+    width: 100%;
 }
 
 .s-skill-dreamweaver{
-    width: 53px;
+    width: 47%;
 }
 
 .s-skill-wordpress{
-    width: 105px;
+    width: 93%;
 }
 
 .s-skill-html-css{
-    width: 91px;
+    width: 80%;
 }
 
 .s-skill-js{
-    width: 50px;
+    width: 46%;
 }
 
 .s-skill-print, .s-skill-write{
