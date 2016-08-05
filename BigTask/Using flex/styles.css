@@ -72,10 +72,6 @@ ul{
     width: 50%;
 }
 
-.left-seciton{
-    margin-right: 14px;
-}
-
 .right-section{
     margin-left: 14px;
 }
@@ -93,7 +89,7 @@ ul{
     font-weight: bold;
 }
 
-.name, .surname, .web-and-graphic, .designer, .header, .available-for, .hire-and-freelance, .contact-form-input, .contact-form-label{
+.name, .surname, .web-and-graphic, .designer, .available-for, .hire-and-freelance, .contact-form-input, .contact-form-label{
     max-width: 205px;
     word-break: break-all;
 }
@@ -147,6 +143,8 @@ ul{
     font-size: 11px;
     margin:0;
     padding: 3px 0 3px 7px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .lorem {
