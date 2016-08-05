@@ -3,10 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E25A36B2-84C5-4C25-A38A-FBAA439246F0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Using flex", "Using flex", "{B76C9F1E-EA77-4874-82D0-37F5441C5103}"
 	ProjectSection(SolutionItems) = preProject
-		home.html = home.html
-		styles.css = styles.css
+		Using flex\home.html = Using flex\home.html
+		Using flex\styles.css = Using flex\styles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Without flex", "Without flex", "{4530B186-DE04-4DD2-B365-5AE99024A799}"
+	ProjectSection(SolutionItems) = preProject
+		Without flex\home.html = Without flex\home.html
+		Without flex\styles.css = Without flex\styles.css
 	EndProjectSection
 EndProject
 Global
