@@ -137,6 +137,7 @@ ul{
 
 .tile{
     margin-bottom: 20px;
+    position:relative;
 }
 
 .header{
@@ -318,8 +319,17 @@ ul{
 
 
 .work-play-balance-wrapper, .work-play-balance-header-section{
+    padding-left:7px;
+    box-sizing:border-box;
+}
+
+.work-play-balance-wrapper{
+    display: table;
+    width: 100%;
+}
+
+.work-play-balance-header-section{
     overflow:hidden;
-    margin-left: 7px;
 }
 
 .margin-first{
@@ -331,12 +341,12 @@ ul{
 }
 
 .col{
-    width: 62px;
+    width: 30%;
+    display: table-cell;
 } 
 
 .left-col{
     text-align:left;
-    float:left;
 }
 
 .right-aligned{
@@ -363,6 +373,7 @@ ul{
     font-weight: normal;
     width: 30%;
     float:left;
+ 
 }
 
 .work-play-balance-title{
@@ -376,9 +387,8 @@ ul{
 }
 
 .mid-col{
-    width: 83px;
     position: relative;
-    float:left;
+    width: 40%;
 }
 
 .circle{
@@ -415,7 +425,6 @@ ul{
 
 .right-col{
     text-align: right;
-    float:right;
 }
     
 .p-skill-list{
@@ -423,7 +432,7 @@ ul{
 }
 
 .p-skill-item{
-    display: flex;
+    overflow: hidden;
     margin-top: 6px;
 }
 
@@ -434,12 +443,14 @@ ul{
     width:87px;
     max-width: 87px;
     word-break:break-all;
+    float:left;
 }
 
 .p-skill-progress{
     height: 8px;
     background-color: #DFCFDC;
     width: 102px;
+    float: left;
 }
 
 .p-skill-social-management, .p-skill-communication, .p-skill-creativity, .p-skill-organisation, .p-skill-team-player{
@@ -468,8 +479,8 @@ ul{
 }
 
 .s-skill-histogram-wrapper{
-    display:flex;
     margin-left: 11px;
+    display: table;
 }
 
 .s-skill-histogram-value-wrapper{
@@ -477,9 +488,17 @@ ul{
     height: 100%;
 }
 
+.s-skill-histogram-text-wrapper{
+    overflow:hidden;
+    position:absolute;
+    top: 165px;
+    margin-left: 11px;
+}
+
 .percent{
     font-size: 7px;
     margin-top: 9px;
+    display: table-cell;
 }
 
 .s-skill-histogram{
@@ -491,6 +510,7 @@ ul{
     transform: rotate(-90deg);
     width: 138px;
     height: 100%;
+    display: table-cell;
 }
 
 .light{
@@ -556,5 +576,5 @@ ul{
 }
 
 .s-skill-print, .s-skill-write, .s-skill-text{
-    margin-top: -26px;
+    float: left;
 }
