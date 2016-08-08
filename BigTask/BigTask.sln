@@ -17,7 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Without flex", "Without fle
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Using bootstrap and less", "Using bootstrap and less", "{8AD578DD-DE83-4B6F-B856-440EC8EA9574}"
 	ProjectSection(SolutionItems) = preProject
+		Using LESS and bootstrap\styles\colors.less = Using LESS and bootstrap\styles\colors.less
 		Using LESS and bootstrap\home.html = Using LESS and bootstrap\home.html
+		Using LESS and bootstrap\styles\mixins.less = Using LESS and bootstrap\styles\mixins.less
+		Using LESS and bootstrap\styles\skill-values.css = Using LESS and bootstrap\styles\skill-values.css
 		Using LESS and bootstrap\styles\styles.css = Using LESS and bootstrap\styles\styles.css
 		Using LESS and bootstrap\styles\styles.less = Using LESS and bootstrap\styles\styles.less
 	EndProjectSection

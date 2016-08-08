@@ -1,4 +1,8 @@
-﻿html{
+﻿@import (reference) "colors.less";
+@import (reference) "mixins.less";
+@import (css) "skill-values.css";
+
+html{
     position: relative;
     min-height: 100%;
 }
@@ -6,8 +10,9 @@
 body{
     margin:0;
     padding:0; 
-    background-color: #9BB7C3;
+    background-color: @light-blue;
     line-height:initial; 
+    color: black;
 }
 
 .page{
@@ -26,11 +31,9 @@ header{
 }  
 
 a, input[type="tel"]{
-    text-decoration: none;
-    color: inherit;
+    .reset-link-decoration();
     &:hover{
-        text-decoration: none;
-        color: inherit;
+        .reset-link-decoration();
         cursor: pointer;
     }
     }
@@ -39,11 +42,8 @@ footer{
     position: absolute;
     bottom: 36px;
     left: 0;
-    color: #5B5B5B;
-    font-family: arial;
-    font-weight: bold;
-    font-size: 18px;
-    text-align:center;
+    color: @dark-gray;
+    .set-font(18px,center, arial, 0px, bold);
 }
 
 ul{
@@ -55,7 +55,7 @@ ul{
 .line {
     width: 100%;
     height: 38px;
-    background: linear-gradient(to right, #A775AA, #F5F5F5, #F5F5F5, #A775AA);
+    .linear-gradient(to right, @super-light-violet, @light-gray);
 }
 
 .freepik-web-site{
@@ -70,7 +70,6 @@ ul{
 
 .section-wrapper{
     overflow:hidden;
-    font-family: Arial;
     padding: 0 58px;
     margin: 0;
 }
@@ -85,16 +84,39 @@ ul{
     margin-left: 28px;
 }
 
-.personal-information, .header{
-    text-transform: uppercase;
-}
-
 .personal-information{
     margin-bottom: 40px;
     padding-left: 22px;
+
+    .name{
+        .set-font(94px, left, verdana, -6px, bold);
+        margin: -20px 0 0 -6px;
+    }
+
+    .surname{
+        .set-font(52px, left, verdana, -2px, bold);
+        margin-top: -16px;
+        display: block;
+        padding-left: 6px;
+    }
+
+    .web-and-graphic {
+        .set-font(38px, left, sans-serif, -2px);
+        margin: 36px 0 0 0;
+    }
+
+    .designer{
+        .set-font(60px, left, sans-serif, -4px);
+        margin: 0;
+        display: block;
+    }
 }
 
-.name, .surname, .header, .left-quote, .right-quote{
+.personal-information, .header, .qualification, .company-name, .available-for, .hire-and-freelance, .contact-form-label, .work-play-balance-header, .work-play-balance-title, .work-play-balance-mid-header{
+    text-transform: uppercase;
+}
+
+.header, .left-quote, .right-quote{
     font-weight: bold;
 }
 
@@ -103,44 +125,8 @@ ul{
     word-break: break-all;
 }
 
-
-.name, .surname{
-    font-family: verdana;
-}
-
-.name{
-    font-size: 94px;
-    letter-spacing: -6px;
-    margin: -20px 0 0 -6px;
-}
-
-.surname{
-    font-size: 52px;
-    letter-spacing: -2px;
-    margin-top: -16px;
-    display: block;
-    padding-left: 6px;
-}
-
 .web-and-graphic, .designer, .left-quote, .right-quote{
-    color: #8f4d8b;
-}
-
-.web-and-graphic {
-    font-size: 38px;
-    margin: 36px 0 0 0;
-    font-family: sans-serif;
-    letter-spacing: -1px;
-    font-weight: normal;
-}
-
-.designer{
-    font-size: 60px;
-    font-family: sans-serif;
-    letter-spacing: -4px;
-    font-weight: normal;
-    margin: 0;
-    display: block;
+    color: @light-violet;
 }
 
 .tile{
@@ -149,7 +135,7 @@ ul{
 }
 
 .header{
-    border-left: solid 8px #691D68;
+    border-left: solid 8px @violet;
     font-size: 22px;
     margin:0;
     padding: 6px 0 6px 14px;
@@ -161,25 +147,25 @@ ul{
     font-size: 12px;
     padding: 0 40px;
     margin: 0;
-}
 
-.lorem::before, .lorem::after{
-    font-size: 88px;
-    color: #8f4d8b;
-    display: block;
-}
+    &::before, &::after{
+        font-size: 88px;
+        color: @light-violet;
+        display: block;
+    }
 
-.lorem::before{
-    content: open-quote;
-    margin-left:-11px;
-    height: 70px;
-}
+    &::before{
+        content: open-quote;
+        margin-left:-11px;
+        height: 70px;
+    }
 
-.lorem::after{
-    content: close-quote;
-    margin:12px -22px 0 0;
-    height: 56px;
-    text-align:right;
+    &::after{
+        content: close-quote;
+        margin:12px -22px 0 0;
+        height: 56px;
+        text-align:right;
+    }
 }
 
 .education-list{
@@ -200,58 +186,44 @@ ul{
 }
 
 .education{
-    border-left: 4px solid #8f4d8b;
-}
+    border-left: 4px solid @light-violet;
 
-.education::before{
-    content: "";
-    border: 6px solid transparent;
-    border-left: 12px solid #8f4d8b;
-    height: 0;
-    width: 0;
-    float:left;
-}
+    &::before{
+        .draw-triangle(6px, 12px);
+        float:left;
+    }
 
-.education:last-child{
-    border:none;
-}
+    &:last-child{
+        border:none;
+    }
 
-.education:last-child::before{
-    content: "";
-    border: 8px solid transparent;
-    border-left: 16px solid #8f4d8b;
-    height: 0;
-    width: 0;
-    margin-top: -2px;
-    margin-right: -4px;
+    &:last-child::before{
+        .draw-triangle(8px, 16px);
+        margin-top: -2px;
+        margin-right: -4px;
+    }
 }
 
 .year{
-    font-size: 14px;
-    font-weight:bold;
-    margin-right: 30px;
+    .set-font(14px, left, arial, 0px, bold);
     margin: 0 30px 0 0 ;
     display: inline-block;
     float:left;
 }
 
 .qualification, .company-name{
-    color: #8f4d8b;
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
+    color: @light-violet;
+    .set-font(18px, left, arial, 0px, bold);
     margin: 0;
 }
 
 .institution-name, .job-name{
-    font-weight: bold;
-    font-size: 20px;
+    .set-font(20px, left, arial, 0px, bold);
     margin: 0;
 }
 
 .short-description{
-    font-size: 12px;
-    font-weight: bold;
+    .set-font(12px, left, arial, 0px, bold);
     margin: 0 0 10px 0;
 }
 
@@ -269,62 +241,56 @@ ul{
 }
 
 .available-for{
-    font-weight:bold;
-    font-size:28px;
-}
+    .set-font(28px, left, arial, -2px, bold);
 
-.available-for, .hire-and-freelance{
-    text-transform: uppercase;
-    letter-spacing: -2px;
-    margin: 0;
+    .colored-span{
+        color:@violet;
+    }
 }
 
 .hire-and-freelance{
-    font-size: 30px;
-    font-weight:normal;
+    .set-font(30px, left, arial, -2px, normal);
     display:block;
+}
+
+.available-for, .hire-and-freelance{
+    margin: 0;
 }
 
 .contact-form{
     margin: 14px 0 66px;
-}
 
-.form-group{
-    margin-bottom: 10px;
-}
+    .form-group{
+        margin-bottom: 10px;
 
-.contact-form-label::before{
-    content:"";
-    display: inline-block;
-    background: #691D68;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    margin: 0 10px -18px 0;
-}
+        .contact-form-label{
+            font-size: 16px;
+            color:@violet;
+            font-weight:bold;
+            display:block;
+            margin-bottom: -2px;
 
-.contact-form-label{
-    font-size: 16px;
-    text-transform: uppercase;
-    color:#691D68;
-    font-weight:bold;
-    display:block;
-    margin-bottom: -2px;
-}
+            &::before{
+                content:"";
+                display: inline-block;
+                background: @violet;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                margin: 0 10px -18px 0;
+            }
+        }
 
-.contact-form-input{
-    font-size: 16px;
-    padding: 0;
-    border: none;
-    margin-left:42px;
-    text-decoration: none;
-    color: black;
+        .contact-form-input{
+            font-size: 16px;
+            padding: 0;
+            border: none;
+            margin-left:42px;
+            text-decoration: none;
+            color: black;
+        }
+    }
 }
-
-.colored-span{
-    color:#691D68;
-}
-
 
 .work-play-balance-wrapper, .work-play-balance-header-section{
     padding-left:14px;
@@ -362,8 +328,7 @@ ul{
 }
 
 .work-play-balance-header, .work-play-balance-title, .work-play-balance-mid-header{
-    color: #8f4d8b;
-    text-transform: uppercase;
+    color: @light-violet;
     letter-spacing: -2px;
     margin: 0;
 }
@@ -400,7 +365,7 @@ ul{
 }
 
 .circle{
-    background-color: rgba(218, 109, 232, 0.5);
+    background-color: @transparent-violet;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -465,31 +430,13 @@ ul{
     background-color: #DFCFDC;
     width: 204px;
     float: left;
+    margin: 0;
+    border-radius: 0;
 }
 
 .p-skill-social-management, .p-skill-communication, .p-skill-creativity, .p-skill-organisation, .p-skill-team-player{
-    background: linear-gradient(to right, #A775AA, #F5F5F5, #F5F5F5, #A775AA);
+    .linear-gradient(to right, @super-light-violet, @light-gray);
     height:100%;
-}
-
-.p-skill-social-management{
-    width: 91%;
-}
-
-.p-skill-creativity{
-    width: 64%;
-}
-
-.p-skill-organisation{
-    width: 97%;
-}
-
-.p-skill-communication{
-    width: 93%;
-}
-
-.p-skill-team-player{
-    width: 80%;
 }
 
 .s-skill-histogram-wrapper{
@@ -528,11 +475,12 @@ ul{
 }
 
 .light{
-    background: linear-gradient(to bottom, #A775AA, #F5F5F5, #F5F5F5, #A775AA);
+    .linear-gradient(to bottom, @super-light-violet, @light-gray);
+    color: black;
 }
 
 .dark{
-    background: linear-gradient(to bottom, #441C41, #8B1B89, #8B1B89, #441C41);
+    .linear-gradient(to bottom, @dark-violet, @bright-violet);
     color: white;
 }
 
@@ -540,34 +488,10 @@ ul{
     padding: 8px;
     margin-left: 8px;
     margin-bottom: 16px;
-}
-
-.s-skill-in-design{
-    width: 86%;
-}
-
-.s-skill-illustrator{
-    width: 92%;
-}
-
-.s-skill-photoshop{
-    width: 100%;
-}
-
-.s-skill-dreamweaver{
-    width: 47%;
-}
-
-.s-skill-wordpress{
-    width: 93%;
-}
-
-.s-skill-html-css{
-    width: 80%;
-}
-
-.s-skill-js{
-    width: 46%;
+    font-size: 14px;
+    float:none;
+    text-align: left;
+    overflow: hidden;
 }
 
 .s-skill-print, .s-skill-write{
@@ -576,12 +500,12 @@ ul{
 }
 
 .s-skill-print{
-    background: linear-gradient(to right, #A775AA, #F5F5F5, #F5F5F5, #A775AA);
+    .linear-gradient(to right, @super-light-violet, @light-gray);
     margin-left: 52px
 }
 
 .s-skill-write{
-    background: linear-gradient(to right, #441C41, #8B1B89, #8B1B89, #441C41);
+    .linear-gradient(to right, @dark-violet, @bright-violet);
 }
 
 .s-skill-text{

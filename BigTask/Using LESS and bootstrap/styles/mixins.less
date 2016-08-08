@@ -1,0 +1,24 @@
+.set-font(@size, @align: left, @family: arial, @spacing: 0px, @weight: normal){
+    font-family: @family;
+    font-weight: @weight;
+    font-size: @size;
+    text-align:@align;
+    letter-spacing: @spacing;
+}
+
+.reset-link-decoration(){
+    text-decoration: none;
+    color: inherit;
+}
+
+.linear-gradient(@direction, @first-color, @second-color){
+    background: linear-gradient(@direction, @first-color, @second-color, @second-color, @first-color);
+}
+
+.draw-triangle(@border, @left-border){
+    content: "";
+    border: @border solid transparent;
+    border-left: @left-border solid @light-violet;
+    height: 0;
+    width: 0;
+}
