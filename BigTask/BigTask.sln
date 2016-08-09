@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Using flex", "Using flex", "{B76C9F1E-EA77-4874-82D0-37F5441C5103}"
 	ProjectSection(SolutionItems) = preProject
@@ -21,7 +21,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Using bootstrap and less", 
 		Using LESS and bootstrap\home.html = Using LESS and bootstrap\home.html
 		Using LESS and bootstrap\styles\mixins.less = Using LESS and bootstrap\styles\mixins.less
 		Using LESS and bootstrap\styles\skill-values.css = Using LESS and bootstrap\styles\skill-values.css
-		Using LESS and bootstrap\styles\styles.css = Using LESS and bootstrap\styles\styles.css
 		Using LESS and bootstrap\styles\styles.less = Using LESS and bootstrap\styles\styles.less
 	EndProjectSection
 EndProject

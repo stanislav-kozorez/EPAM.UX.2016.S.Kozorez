@@ -32,11 +32,12 @@ header{
 
 a, input[type="tel"]{
     .reset-link-decoration();
+
     &:hover{
         .reset-link-decoration();
         cursor: pointer;
     }
-    }
+}
 
 footer{
     position: absolute;
@@ -112,23 +113,6 @@ ul{
     }
 }
 
-.personal-information, .header, .qualification, .company-name, .available-for, .hire-and-freelance, .contact-form-label, .work-play-balance-header, .work-play-balance-title, .work-play-balance-mid-header{
-    text-transform: uppercase;
-}
-
-.header, .left-quote, .right-quote{
-    font-weight: bold;
-}
-
-.name, .surname, .web-and-graphic, .designer, .available-for, .hire-and-freelance, .contact-form-input, .contact-form-label{
-    max-width: 410px;
-    word-break: break-all;
-}
-
-.web-and-graphic, .designer, .left-quote, .right-quote{
-    color: @light-violet;
-}
-
 .tile{
     margin-bottom: 40px;
     position:relative;
@@ -156,7 +140,7 @@ ul{
 
     &::before{
         content: open-quote;
-        margin-left:-11px;
+        margin-left:-20px;
         height: 70px;
     }
 
@@ -327,12 +311,6 @@ ul{
     text-align: right;
 }
 
-.work-play-balance-header, .work-play-balance-title, .work-play-balance-mid-header{
-    color: @light-violet;
-    letter-spacing: -2px;
-    margin: 0;
-}
-
 .work-play-balance-mid-header{
     font-size: 22px;
     text-align:center;
@@ -434,11 +412,6 @@ ul{
     border-radius: 0;
 }
 
-.p-skill-social-management, .p-skill-communication, .p-skill-creativity, .p-skill-organisation, .p-skill-team-player{
-    .linear-gradient(to right, @super-light-violet, @light-gray);
-    height:100%;
-}
-
 .s-skill-histogram-wrapper{
     margin-left: 22px;
     display: table;
@@ -515,4 +488,32 @@ ul{
 
 .s-skill-print, .s-skill-write, .s-skill-text{
     float: left;
+}
+
+.work-play-balance-header, .work-play-balance-title, .work-play-balance-mid-header{
+    color: @light-violet;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.p-skill-social-management, .p-skill-communication, .p-skill-creativity, .p-skill-organisation, .p-skill-team-player{
+    .linear-gradient(to right, @super-light-violet, @light-gray);
+    height:100%;
+}
+
+.personal-information, .header, .qualification, .company-name, .available-for, .hire-and-freelance, .contact-form-label, .work-play-balance-header, .work-play-balance-title, .work-play-balance-mid-header{
+    text-transform: uppercase;
+}
+
+.header, .left-quote, .right-quote{
+    font-weight: bold;
+}
+
+.name, .surname, .web-and-graphic, .designer, .available-for, .hire-and-freelance, .contact-form-input, .contact-form-label{
+    max-width: 410px;
+    word-break: break-all;
+}
+
+.web-and-graphic, .designer, .left-quote, .right-quote{
+    color: @light-violet;
 }
